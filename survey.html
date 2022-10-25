@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id='title'>Game Survey Form</h1>
+    <p class='description' id='description'>Thank you for telling us what your favorite games are!</p>
+  </body>
+  <div class="menu">
+    <form id='survey-form'>
+      <fieldset>
+        <label id="name-label" for='name'>Name <input id='name' name='name' type='text' placeholder="Enter your name" required /></label>
+        <label id="email-label" for='email'>Email <input id='email' name='email' type='email' placeholder="Enter your email" required /></label>
+        <label id="number-label" for='number'>Age (optional) <input id='number' name='age' type='number' min='1' max='101' placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label for='dropdown'>
+          What is your favorite game style?
+          <select id='dropdown'>
+            <option value=''>(select one)</option>
+            <option value='1'>Strategy</option>
+            <option value='2'>Action</option>
+            <option value='3'>Party</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        What is your preferred console?
+        <label for='xbox'><input id='xbox' name='console' type='radio' class='inline' value='1' />Xbox</label>
+        <label for='playstation'><input id='playstation' name='console' type='radio' class='inline' value='2' />Playstation</label>
+        <label for='nintendo'><input id='nintendo' name='console' type='radio' class='inline' value='3' />Nintendo</label>
+        <label for='pc'><input id='pc' name='console' type='radio' class='inline' value='4' />PC</label>
+      </fieldset>
+      <fieldset>
+        Which of these game series do you like?
+        <label for='loz'><input value='1' type='checkbox' class='inline' id='loz'/>Legend of Zelda</label>
+        <label for='mario'><input value='2' type='checkbox' class='inline' id='mario'/>Mario</label>
+        <label for='cod'><input value='3' type='checkbox' class='inline' id='cod'/>Call of Duty</label>
+        <label for='ds'><input value='4' type='checkbox' class='inline' id='ds'/>Dark Souls</label>
+        <label for='halo'><input value='5' type='checkbox' class='inline' id='halo'/>Halo</label>
+        <label for='bio'><input value='6' type='checkbox' class='inline' id='bio'/>Bioshock</label>
+      </fieldset>
+      <fieldset>
+        <label for='fav'>What is your favorite game?<textarea id="fav" name="fav" rows="3" cols="30" placeholder="(eg. Dark Souls 3, Breath of the Wild, etc.)"></textarea></label>
+      </fieldset>
+      <input id='submit' type="submit" value="Submit" />
+    </form>
+  </div>
+</html>
